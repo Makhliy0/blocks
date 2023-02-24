@@ -28,12 +28,12 @@ for (let i of arr) {
     document.write(`
     <diV class='block'>
         <h2>${i.title}</h2>
-        <button value='width100'>100px</button>
-        <button value='width200'>200px</button>
-        <button value='width300'>300px</button>
-        <button value='width400'>400px</button>
-        <button value='width500'>500px</button>
-        <button value='width600'>600px</button>
+        <button class="width" value='width100'>100px</button>
+        <button class="width" value='width200'>200px</button>
+        <button class="width" value='width300'>300px</button>
+        <button class="width" value='width400'>400px</button>
+        <button class="width" value='width500'>500px</button>
+        <button class="width" value='width600'>600px</button>
         <button class="color" value='red'>red</button>
         <button class="color" value='orange'>orange</button>
         <button class="color" value='yellow'>yellow</button>
@@ -54,14 +54,6 @@ for (let i of blocks) {
                 item.parentNode.classList.remove('width500');
                 item.parentNode.classList.remove('width600')
             }*/
-            event.target.parentNode.classList.toggle(event.target.value)
-        }
-
-    )
-}
-let coloring = document.querySelector('.block .color')
-for (let i of coloring) {
-    i.addEventListener('click', () => {
             event.target.parentNode.classList.toggle(event.target.value)
         }
 
